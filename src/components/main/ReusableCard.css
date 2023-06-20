@@ -1,0 +1,163 @@
+/* REUSABLE CARD  */
+.bg-image {
+    width: 320px;
+    height: 350px;
+    object-fit: contain !important;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.card {
+    width: 320px;
+    border: 0 !important;
+    /* added new */
+    height: 350px !important;
+
+}
+
+.card:hover .bg-image {
+    transform: scale(1.1);
+    z-index: 0;
+}
+
+.sportTitle {
+    align-self: center;
+    position: absolute;
+    font-family: var(--font-family-soho_std-medium);
+    font-size: xx-large;
+    text-transform: capitalize;
+    color: white !important;
+    text-align: center;
+    width: 95%;
+    transition: all 0.9s;
+    border: 0 !important;
+    transform: translateY(200px);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card:hover .sportTitle {
+    opacity: 1;
+    margin-top: 10%;
+    transform: translateY(0);
+}
+
+.card-img {
+    -webkit-filter: brightness(20%);
+    -moz-filter: brightness(50%);
+    filter: url(#brightness);
+    filter: brightness(70%);
+    transition: all 0.9s;
+}
+
+.card:hover .card-img {
+    -webkit-filter: brightness(20%);
+    -moz-filter: brightness(20%);
+    filter: url(#brightness);
+    filter: brightness(20%);
+}
+
+.contentsCard {
+    bottom: 0 !important;
+    margin-top: 38%;
+}
+
+.contentsCard p span {
+    color: white !important;
+    font-family: var(--font-family-soho_std-regular) !important;
+}
+
+.card .contentsCard {
+    transform: translateY(550%);
+    transition: 0.9s;
+}
+
+.card:hover .contentsCard {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.card-text {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.testingButton {
+    border-radius: 60px;
+    border: 1px solid white;
+    zoom: 60%;
+}
+
+.logo {
+    height: auto;
+    width: 70px !important;
+    opacity: 0.6;
+}
+
+.button-effect {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 25px;
+    cursor: pointer;
+    height: 25px;
+    color: white;
+    border-radius: 90%;
+    transition: 0.9s;
+    box-shadow: 5px 1px 5px 2px var(--blue);
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.button-effect:hover {
+    color: var(--white);
+}
+
+.card:hover .button-effect {
+    width: 125px;
+    border-radius: 60px;
+    transition-delay: 0.5s;
+}
+
+.card:hover .button-effect span {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.9s;
+    transform: translateX(10px);
+}
+
+.button-effect span {
+    visibility: hidden;
+    white-space: nowrap;
+    transition: 0.9s;
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+.button-effect::before {
+    position: absolute;
+    transition: 0.9s;
+}
+
+.contentCardBelow {
+    margin-right: 80px !important;
+    margin-left: 80px !important;
+    margin-bottom: 10px !important;
+    transition: 0.7s;
+    align-items: center;
+}
+
+.card:hover .contentCardBelow {
+    margin: 10px 25px !important;
+}
+
+.aos-init {
+    overflow: hidden;
+}
+
+/* REUSABLE CARD  */
